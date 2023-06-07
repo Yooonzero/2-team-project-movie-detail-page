@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="03.js" type="module"></script>
+        <title>"레전드 영화관"</title>
+
+        <style>
+            * {
+                font-style: oblique;
+                list-style: none;
+            }
+            .h {
+                background-color: #0a174e;
+                color: #f5d042;
+
+                margin: auto;
+                height: 100px;
+
+                text-align: center;
+                font-size: 60px;
+            }
+            .search {
+                background-color: #ced46a;
+                text-align: center;
+
+                height: 45px;
+                padding: 10px 0px 10px 0px;
+
+                font-size: 23px;
+                border-bottom: 1px solid black;
+            }
+            .search > button:hover {
+                border: 2px solid white;
+            }
+            .text {
+                border-radius: 5px;
+                border-color: aqua;
+                font-size: 30px;
+            }
+            .btn1 {
+                color: black;
+                background-color: yellowgreen;
+                font-size: 20px;
+            }
+            .movieBox {
+                margin-top: 20px;
+                text-align: center; /* text-align 속성은 텍스트의 정렬 방향을 의미. center: 중앙정렬 */
+                display: flex; /* 무비박스는 flex containner 가 되고, box안에 들어있는 요소들은 자동으로 flex item 이 된다. 정렬시 사용 */
+                flex-wrap: wrap; /* 부모의 넓이보다 자식요소들의 넓이가 더 크다면, 자동으로 다음줄로 줄 바꿈시켜준다.*/
+                justify-content: center; /* 플렉스 요소는 플렉스 컨테이너의 가운데에서부터 배치됩니다. */
+                gap: 40px; /* gap은 내부의 children 요소들이 일정한 간격으로 떨어져 위치할 수 있도록 사용하는 스타일 속성입니다. */
+            }
+            .movieCard {
+                width: 300px;
+                background-color: orange;
+            }
+            .moviePoster_path {
+                display: block; /*display 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지합니다.
+                                  대표적인 block 엘리먼트로 <div>이나 <p>, <h1> 태그 등을 들 수 있습니다.*/
+                width: 250px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="h">레전드 상영관</h1>
+        <div class="search">
+            영화 검색 : <input type="text" class="text" id="searchInput" />
+            <button onclick="findMovie()" class="btn1" id="findBtn">검색</button>
+            <!-- 버튼 클릭시 함수를 호출하는 메서드 -->
+        </div>
+        <div class="movieBox" id="m-box">
+            <li onclick="showAlert()" class="movieCard" id="m-card">
+                <!-- li태그 클릭시 함수를 호출하는 메서드 -->
+                <img class="moviePoster_path" src="" alt="이미지없음." />
+                <div calss="poster">
+                    <h2 class="movieTitle">title</h2>
+                    <p class="movieOverview">overview</p>
+                    <p class="movieVoteAverage">vote_average</p>
+                </div>
+            </li>
+        </div>
+    </body>
+</html>
