@@ -6,7 +6,7 @@ const options = {
             'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZTE5ZDcyMGQ4YTM5Mzg2Njk3MjU5ZTcxNjNlZjhiYyIsInN1YiI6IjY0NzA4N2I5NzcwNzAwMDBkZjEzZGQ1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qsdY4rXn-7jYUf8PwRXStzlDcISDYLBTZbW2bJ_j07w',
     },
 }; // TMDB에서 복사해온 코드.
-
+// ggdgdg
 // [영화 포스터를 클릭했을 때, 해당 영화의 id값을 가져오는 alert 창을 띄워주는 함수.]
 function showAlert(id) {
     alert(`영화 id : ${id}`);
