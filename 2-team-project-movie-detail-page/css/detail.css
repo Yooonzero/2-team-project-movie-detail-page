@@ -1,0 +1,252 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #ABDEE6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+
+    background-color: #ccc;
+    padding: 30px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#movie-card>div {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px;
+    margin: 28px;
+    display: flex;
+    background-color: #F6EAC2;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+#movie-card .poster {
+    width: 50%;
+}
+
+#movie-card .title {
+    font-size: 48px;
+    text-align: center;
+    padding: 40px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.genres span {
+    padding: 8px 12px;
+    background-color: #e9daf4;
+    border-radius: 100px;
+
+
+}
+
+#movie-card .overview {
+    font-size: 20px;
+    margin: 32px 0;
+}
+
+#movie-card .rate,
+#movie-card .runtime {
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.comment-form-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    padding: 50px;
+    background-color: #F6EAC2;
+    border-radius: 10px;
+}
+
+.comment-form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.input-wrap {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-wrap input {
+    outline: none;
+    margin-left: 12px;
+    height: 30px;
+    width: 200px;
+}
+
+#contents {
+    outline: none;
+    width: calc(100% - 6px);
+}
+
+#comment-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #e9daf4;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#comment-btn:hover {
+    background: #4c385a;
+    color: #fff;
+}
+
+#comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1080px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.review {
+    width: calc(100% -32px);
+    background-color: #F6EAC2;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 0 20px;
+}
+
+.review button {
+    cursor: pointer;
+    background-color: #e9daf4;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.review .comment-contnets, .review .comment-writer {
+    margin-bottom: 12px;
+}
+
+.review input {
+    outline: none;
+    height: 30px;
+    width: 400px;
+    margin-bottom: 12px;
+    display: block;
+}
+.review textarea {
+    margin-bottom: 12px;
+    height: 50px;
+    width: 400px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    #movie-card>div {
+        flex-direction: column;
+        padding: 20px;
+        margin: 16px;
+    }
+
+    #movie-card .poster {
+        width: 100%;
+    }
+
+    #movie-card .overview {
+        font-size: 16px;
+    }
+
+    #movie-card .rate,
+    #movie-card .runtime {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .genres {
+        justify-content: center;
+    }
+
+    .input-wrap {
+        flex-direction: column;
+    }
+
+    .comment-form {
+        width: 80%;
+        padding: 40px;
+        align-items: center;
+    }
+
+    label {
+        display: block;
+        padding-bottom: 4px;
+    }
+
+    .input-wrap input {
+        margin: 0;
+        width: 250px;
+    }
+
+    #contents {
+        outline: none;
+        width: 250px;
+    }
+
+    #comment-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .input-wrap input {
+        margin: 0;
+        width: 200px;
+    }
+
+    #contents {
+        outline: none;
+        width: 200px;
+    }
+}
